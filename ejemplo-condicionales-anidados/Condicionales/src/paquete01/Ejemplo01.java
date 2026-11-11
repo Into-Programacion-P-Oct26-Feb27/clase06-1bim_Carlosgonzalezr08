@@ -47,6 +47,9 @@ public class Ejemplo01 {
 }
 /*
 El usuario debe ingresar en opcion el valor de 2 en la linea 25, pasa a la linea
-27 donde muestra (2
-*/
+27 donde muestra (2 > 0 && 2 <= 3), como es verdadero pasa a la linea 28 donde 
+dice si (2==1)lo cual es falso, pasa la linea 31 al else, y luego a la 32 donde
+dice (2==2) lo cual es verdadero, entonces , sale trabajar con OR, y luego pasa
+a cerrar todas las condicionales
+
 */
