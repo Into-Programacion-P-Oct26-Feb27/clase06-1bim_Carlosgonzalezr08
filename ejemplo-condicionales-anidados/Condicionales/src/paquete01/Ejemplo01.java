@@ -34,7 +34,8 @@ public class Ejemplo01 {
                 }else{
                     // se asume opción = 3
                     // sería con NOT
-                    System.out.printf("%s\n", "Trabajar con NOT");
+                    System.out.printf
+        ("%s\n", "Trabajar con NOT");
                 }
             }
         }else{
@@ -44,3 +45,8 @@ public class Ejemplo01 {
     }
 
 }
+/*
+El usuario debe ingresar en opcion el valor de 2 en la linea 25, pasa a la linea
+27 donde muestra (2
+*/
+*/
