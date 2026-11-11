@@ -36,7 +36,7 @@ public class Comercio012 {
 
         System.out.println("Ingrese el nombre de la Empresa: ");
         nombreEmpresa = entrada.nextLine();
-        
+
         System.out.println("Ingrese el nombre por favor");
         nombre = entrada.nextLine();
 
@@ -55,6 +55,7 @@ public class Comercio012 {
 
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
+        System.out.println(productividad);
 
         adicionalSeguro = (sueldoBasico * porcentajeSeguro) / 100;
 
@@ -114,7 +115,7 @@ public class Comercio012 {
                     bono = 100;
                     sueldoFinal = adicionalSeguro + bono + sueldoBasico;
                     System.out.printf("Reporte de Empleado\n"
-                            + "Empresa:\n\n"
+                            + "Empresa:%s\n"
                             + "Nombres: %s\n"
                             + "Apellidos: %s\n"
                             + "Edad: %d\n"
@@ -136,36 +137,11 @@ public class Comercio012 {
                             sueldoFinal);
 
                 } else {
-                    if (productividad >= 200 && productividad <=500) {
+                    if (productividad >= 200 && productividad <= 500) {
                         bono = 300;
                         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
                         System.out.printf("Reporte de Empleado\n"
-                                + "Empresa:\n\n"
-                                + "Nombres: %s\n"
-                                + "Apellidos: %s\n"
-                                + "Edad: %d\n"
-                                + "Sueldo: $%.2f\n"
-                                + "Número de productos vendidos: %d\n"
-                                + "\tProductidad: %.2f\n"
-                                + "\tBono: $%.2f\n"
-                                + "Adicional del seguro: $%.2f\n\n"
-                                + "Sueldo final: $%.2f\n",
-                                nombreEmpresa,
-                                apellido,
-                                edad,
-                                sueldoBasico,
-                                numeroProductos,
-                                productividad,
-                                bono,
-                                adicionalSeguro,
-                                sueldoFinal);
-                    
-                    }else{
-                    if (productividad >= 200) {
-                        bono = 300;
-                        sueldoFinal = adicionalSeguro + bono + sueldoBasico;
-                        System.out.printf("Reporte de Empleado\n"
-                                + "Empresa\n\n"
+                                + "Empresa:%s\n"
                                 + "Nombres: %s\n"
                                 + "Apellidos: %s\n"
                                 + "Edad: %d\n"
@@ -185,31 +161,33 @@ public class Comercio012 {
                                 bono,
                                 adicionalSeguro,
                                 sueldoFinal);
-                    }else {
-                        bono = 300;
-                        sueldoFinal = adicionalSeguro + bono + sueldoBasico;
-                        System.out.printf("Reporte de Empleado\n"
-                                + "Empresa:\n\n"
-                                + "Nombres: %s\n"
-                                + "Apellidos: %s\n"
-                                + "Edad: %d\n"
-                                + "Sueldo: $%.2f\n"
-                                + "Número de productos vendidos: %d\n"
-                                + "\tProductidad: %.2f\n"
-                                + "\tBono: $%.2f\n"
-                                + "Adicional del seguro: $%.2f\n\n"
-                                + "Sueldo final: $%.2f\n",
-                                nombreEmpresa,
-                                nombre,
-                                apellido,
-                                edad,
-                                sueldoBasico,
-                                numeroProductos,
-                                productividad,
-                                bono,
-                                adicionalSeguro,
-                                sueldoFinal);
-                    }
+
+                    } else {
+                        if (productividad > 500) {
+                            bono = 300;
+                            sueldoFinal = adicionalSeguro + bono + sueldoBasico;
+                            System.out.printf("Reporte de Empleado\n"
+                                    + "Empresa%s\n"
+                                    + "Nombres: %s\n"
+                                    + "Apellidos: %s\n"
+                                    + "Edad: %d\n"
+                                    + "Sueldo: $%.2f\n"
+                                    + "Número de productos vendidos: %d\n"
+                                    + "\tProductidad: %.2f\n"
+                                    + "\tBono: $%.2f\n"
+                                    + "Adicional del seguro: $%.2f\n\n"
+                                    + "Sueldo final: $%.2f\n",
+                                    nombreEmpresa,
+                                    nombre,
+                                    apellido,
+                                    edad,
+                                    sueldoBasico,
+                                    numeroProductos,
+                                    productividad,
+                                    bono,
+                                    adicionalSeguro,
+                                    sueldoFinal);
+                        }
                     }
                 }
             }
